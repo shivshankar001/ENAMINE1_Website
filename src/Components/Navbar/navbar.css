@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+}
+.menu-bar{
+    display: inline-block;
+    padding-left: 150px;
+    padding-top: 0;
+}
+.menu{
+    /* position: absolute; */
+    list-style-type: none;
+    /* display: flex; */
+    border-radius: 10px;
+
+}
+
+.menu-elements{
+    /* display: ; */
+    padding:10px 30px;
+    background-color: #ffded9;
+    font-family: Montserrat , sans-serif;
+}
+
+.menu-elements:first-child{
+    border-radius: 5px 00px 0px 5px;
+}
+
+.menu-elements:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.menu-elements:hover{
+    background-color: #bc3476;
+    transition: 0.4s;
+}
+
+.link-menu-elements{
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
