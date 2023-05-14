@@ -1,0 +1,35 @@
+#description{
+    height:600px;
+    width:100%;
+}
+
+.para-body{
+    padding: 150px;
+    padding-top: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.heading{
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: #EEEE;
+    font-size: 3.5rem;
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+
+.my-image{
+    /* display: inline-block; */
+    margin-left: 200px;
+    float: left;
+    margin-top: 40px;
+}
+
+.description{
+    display: flex;
+}

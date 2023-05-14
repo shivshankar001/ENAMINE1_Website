@@ -1,0 +1,52 @@
+.carousal {
+    width: 100%;
+    height: 700px;
+    background:rgba(0, 0, 0, 0.2)
+}
+
+
+.icon-and-menu {
+    /* display: inline-block; */
+    display: block;
+}
+
+.logo {
+    /* margin: auto; */
+    display: inline-block;
+    /* position:absolute; */
+    padding: 100px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.biohazard {
+    font-size: 12rem;
+    color: #e1c874;
+}
+
+.carousal-hero-title-text {
+    /* position:absolute; */
+    /* display: inline-block; */
+    padding-left: 250px;
+    margin-bottom: 0;
+    font-size: 4.5rem;
+    font-family: Montserrat;
+    font-weight: 900;
+    color: #f42b83;
+}
+
+.carousal-para {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 250px;
+    margin-top: 0;
+    color: white;
+}
+
+.slide-container{
+    height: 700px;
+    width:100%;
+    /* opacity: 0.2; */
+}
+

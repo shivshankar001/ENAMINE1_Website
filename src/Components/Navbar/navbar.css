@@ -3,7 +3,7 @@ nav{
 }
 .menu-bar{
     display: inline-block;
-    padding-left: 150px;
+    /* padding-left: 2000; */
     padding-top: 0;
 }
 .menu{
@@ -17,16 +17,20 @@ nav{
 .menu-elements{
     /* display: ; */
     padding:10px 30px;
-    background-color: #ffded9;
+    background-color: #f2ad42;
     font-family: Montserrat , sans-serif;
+    text-align: center;
+    /* width: 180px; */
 }
 
 .menu-elements:first-child{
     border-radius: 5px 00px 0px 5px;
+    /* padding-left: 50px; */
 }
 
 .menu-elements:last-child{
     border-radius: 0px 5px 5px 0px;
+    /* padding-right: 50px; */
 }
 
 .menu-elements:hover{
