@@ -9,8 +9,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/' Component={App} />
+        <Route path='/MyOwnWebsite' Component={App} />
       </Routes>
     </Router>
+    {/* <App /> */}
   </React.StrictMode>
 );
