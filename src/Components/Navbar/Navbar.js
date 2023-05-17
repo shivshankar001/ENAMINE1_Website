@@ -1,22 +1,24 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './navbar.css'
 
 const Navbar = () => {
-    const elements = ["Home", "About US", "College", "Skills", "Contact Us"]
+    const elements = [{ name: "Home", link: "/MyOwnWebsite" },{ name: "About US", link: "/MyOwnWebsite/about"},{ name: "College", link: "/MyOwnWebsite/college"},{ name: "Skills", link: "/MyOwnWebsite/skills"},{ name: "Contact Us", link: "/MyOwnWebsite/contact-us"}]
     return (
         <div className='menu-bar'>
             <nav>
                 <ul
                     className='menu'>
-                    <a href='https://fontawesome.com/docs/web/style/animate' className='link-menu-elements'>
+                    <div className='link-menu-elements'>
                         {elements.map((element) => (
-                            <li
+                            <NavLink
                                 key={elements.indexOf(element)}
+                                to={element.link}
                                 className='menu-elements'>
-                                {element}
-                            </li>
+                                {element.name}
+                            </NavLink>
                         ))}
-                    </a>
+                    </div>
                 </ul>
             </nav>
         </div>

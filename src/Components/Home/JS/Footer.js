@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import '../CSS/footer.css'
 import logoPhone from '../Assets/Images/phone-solid.svg'
 import logoFacebook from '../Assets/Images/facebook.svg'
@@ -8,22 +9,22 @@ import logoEmail from '../Assets/Images/envelope-regular.svg'
 
 
 const Footer = () => {
-  const links = ['Home', 'About us', 'College - Materials', 'Skills']
+  const links = [{ name: "Home", link: "/MyOwnWebsite" }, { name: "About US", link: "/MyOwnWebsite/about" }, { name: "College", link: "/MyOwnWebsite/college" }, { name: "Skills", link: "/MyOwnWebsite/skills" }, { name: "Contact Us", link: "/MyOwnWebsite/contact-us" }]
   const myLinks = [
     {
-      index: 0, name: 'Phone', image: logoPhone, value: '(+91) 8955602543', url: '#'
+      index: 0, name: 'Phone', image: logoPhone, value: '(+91) 8955602543', url: 'tel:+918955602543'
     },
     {
-      index: 1, name: 'Email', image: logoEmail, value: 'kshashwat@kgpian.iitkgp.ac.in', url: '#'
+      index: 1, name: 'Email', image: logoEmail, value: 'kshashwat@kgpian.iitkgp.ac.in', url: 'mailto:kshashwat@kgpian.iitkgp.ac.in'
     },
     {
-      index: 2, name: 'Github', image: logoGithub, value: 'ENAMINE1', url: '#'
+      index: 2, name: 'Github', image: logoGithub, value: 'ENAMINE1', url: 'https://github.com/ENAMINE1'
     },
     {
-      index: 3, name: 'Linkedin', image: logoLinkedin, value: 'Shashwat Kumar', url: '#'
+      index: 3, name: 'Linkedin', image: logoLinkedin, value: 'Shashwat Kumar', url: 'https://www.linkedin.com/in/shashwat-kumar-270754223/'
     },
     {
-      index: 4, name: 'Facebook', image: logoFacebook, value: 'Shashwat Kumar', url: '#'
+      index: 4, name: 'Facebook', image: logoFacebook, value: 'Shashwat Kumar', url: 'https://www.facebook.com/profile.php?id=100075222348146'
     }
   ]
   return (
@@ -36,7 +37,7 @@ const Footer = () => {
           Send a Message
         </p>
         <div className="floating-label-group">
-          <input type="text" id="username" className="form-control textbox" autoComplete="off" autoFocus required />
+          <input type="text" id="username" className="form-control textbox" autoComplete="off" required />
           <label className="floating-label para-body">Your Name</label>
         </div>
 
@@ -45,7 +46,7 @@ const Footer = () => {
           <label className="floating-label para-body">Email</label>
         </div>
         <div className='floating-label-group'>
-          <input type="text" name="Message" id="message" className='message form-control' autoComplete="off"/>
+          <input type="text" name="Message" id="message" className='message form-control' autoComplete="off" />
           <label className="floating-label para-body">Message</label>
         </div>
         <button className='custom-btn btn-7'>Send</button>
@@ -59,7 +60,7 @@ const Footer = () => {
         </p>
         <div className="links-to-pages">
           {links.map((item) => (
-            <a className='sitemap-links' href='#' key={links.indexOf(item)}>{item}</a>
+            <NavLink className='sitemap-links' to={item.link} key={links.indexOf(item)}>{item.name}</NavLink>
           ))}
         </div>
       </div>

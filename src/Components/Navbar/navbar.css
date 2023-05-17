@@ -3,24 +3,26 @@ nav{
 }
 .menu-bar{
     display: inline-block;
-    /* padding-left: 2000; */
     padding-top: 0;
 }
 .menu{
-    /* position: absolute; */
     list-style-type: none;
-    /* display: flex; */
     border-radius: 10px;
 
 }
 
 .menu-elements{
-    /* display: ; */
     padding:10px 30px;
     background-color: #f2ad42;
     font-family: Montserrat , sans-serif;
     text-align: center;
-    /* width: 180px; */
+    text-decoration: none;
+    color: black;
+}
+
+.link-menu-elements>.menu-elements.active{
+    background-color: #2fdf84;
+    transition: 0.4s;
 }
 
 .menu-elements:first-child{

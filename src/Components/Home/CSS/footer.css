@@ -47,6 +47,10 @@
     margin: 0.8rem 0;
 }
 
+.links-to-pages>.active{
+    color: #2fdf84;
+}
+
 .usefull-links-logo {
     height: 1.2rem;
     width: 1.2rem;
