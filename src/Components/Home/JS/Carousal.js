@@ -10,8 +10,8 @@ const Carousal = () => {
 
 
     const slides = [
-        { url: 'https://eccommonstorage.blob.core.windows.net/codered/uploads/VwwbpnI8PxR7mo0Q4m3YQbgNceLx9Gi0hdUZBdFj.jpg', index: 0, topic: "Web Development", label: "Enthusiastically diving into the world of web development, I am captivated by the endless possibilities it offers. With expertise in React, Node.js, CSS, and MongoDB, I thrive on crafting dynamic and seamless digital experiences. The thrill of bringing ideas to life through code fuels my passion and pushes me to constantly learn and evolve in this ever-changing field." },
-        { url: 'https://media.istockphoto.com/id/1386341272/photo/abstract-modern-tech-of-programming-code-screen-developer.jpg?b=1&s=170667a&w=0&k=20&c=he7tDY0-AW8r5q7BVTCHMuxnCPaeKsng1-RZxyCtfTE=', index: 1, topic: "Competetive Programming", label: "Immersed in the realm of competitive programming, I find exhilaration and intellectual challenge in solving intricate coding problems. With a keen understanding of algorithms and data structures, I thrive on the adrenaline rush of optimizing code for efficiency and pushing the boundaries of what's possible." },
+        { url: 'https://wallpaperaccess.com/full/8901670.png', index: 0, topic: "Web Development", label: "Enthusiastically diving into the world of web development, I am captivated by the endless possibilities it offers. With expertise in React, Node.js, CSS, and MongoDB, I thrive on crafting dynamic and seamless digital experiences. The thrill of bringing ideas to life through code fuels my passion and pushes me to constantly learn and evolve in this ever-changing field." },
+        { url: 'https://c4.wallpaperflare.com/wallpaper/629/223/720/code-rain-dark-wallpaper-preview.jpg', index: 1, topic: "Competetive Programming", label: "Immersed in the realm of competitive programming, I find exhilaration and intellectual challenge in solving intricate coding problems. With a keen understanding of algorithms and data structures, I thrive on the adrenaline rush of optimizing code for efficiency and pushing the boundaries of what's possible." },
         { url: 'https://getwallpapers.com/wallpaper/full/8/9/e/95677.jpg', index: 2, topic: 'Volleyball', label: "I excel as a setter on the volleyball court, orchestrating plays and facilitating the team's success. Volleyball is my passion, and the thrill of the game keeps me hooked. I proudly represented my hall of residence in the general championship, striving to bring victory and unity to our community." },
         { url: 'https://c4.wallpaperflare.com/wallpaper/137/703/603/anime-kimetsu-no-yaiba-tanjiro-kamado-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg', index: 3, topic: 'Anime', label: "Immersed in the captivating world of anime, I find solace and joy in every episode, transported to realms beyond imagination. Anime is my truest love, an art form that ignites my passion and fuels my creativity. With enthusiasm, I indulge in the wonders of animated storytellng, forever grateful for the memories it has etched in my heart." },
     ]
@@ -20,6 +20,7 @@ const Carousal = () => {
         // backgroundSize: 'cover',
         // backgroundRepeat: 'none',
         // backgroundPosition: 'up',
+        // objectFit: 'contain',
         height: '700px',
         width: '100%',
         rgba: '(0,0,0,0.5)',
@@ -64,9 +65,10 @@ const Carousal = () => {
                             <Carousel.Item style={slidesStyles} key={item.index}>
                                 <div className='carousal'>
                                     <img
-                                        className="d-block w-100"
+                                        className="d-block w-100 carousel-img"
                                         src={item.url}
                                         alt={"Slide No. " + item.index}
+                                        style={{objectFit:'cover', height:700, filter:'blur(5px)'}}
                                     />
                                 </div>
                                 <Carousel.Caption>
@@ -76,9 +78,10 @@ const Carousal = () => {
                             </Carousel.Item>
                         )))}
                         {/* <FontAwesomeIcon icon={faBiohazard} size='2xl' className='biohazard' /> */}
-                        <div className='carousal'>
+                        <div className='header'>
+                            <div className="header-image"><img className='image' src="https://c4.wallpaperflare.com/wallpaper/562/372/1012/programmers-javascript-minimalism-wallpaper-preview.jpg" alt="image" /></div>
                             <div className='icon-and-menu'>
-                                <div className='logo'><img src='https://i.pinimg.com/564x/3e/3c/f2/3e3cf2aff74d14530c0ef2aa25b55fc4.jpg' width={150}></img>
+                                <div className='logo'><img id='my-logo' src='https://i.pinimg.com/564x/3e/3c/f2/3e3cf2aff74d14530c0ef2aa25b55fc4.jpg' width={200}></img>
                                 </div>
                                 <Navbar />
                             </div>

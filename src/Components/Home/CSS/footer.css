@@ -1,0 +1,52 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 150px;
+    padding-bottom: 40px;
+}
+
+.subheading{
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.footer-para-body{
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-us{
+    justify-content: left;
+}
+
+.textbox{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+    border-radius: 5px;
+}
+.message{
+    height:120px;
+    width:70%;
+}
+
+.sitemap-links{
+    display: block;
+    text-decoration: none;
+    color: #EEEE;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0.8rem 0;
+}
+
+.usefull-links-logo{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 1.5rem;
+    /* font-size: 1rem; */
+}

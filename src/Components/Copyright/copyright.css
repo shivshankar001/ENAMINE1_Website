@@ -1,0 +1,12 @@
+#copyright{
+    /* height: 2rem; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    /* margin: auto; */
+    background-color: beige;
+}
