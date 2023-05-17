@@ -3,16 +3,16 @@ import '../CSS/skills.css'
 
 const Skills = () => {
     const skills = [{
-        index: 0, name: 'React Js', url: 'https://www.patterns.dev/img/reactjs/react-logo@3x.svg'
+        index: 0, name: 'C++', url: 'https://media.geeksforgeeks.org/img-practice/banner/cpp-programming-basic-to-advanced-thumbnail-old.png?v=1684154013.0731087'
     },
     {
-        index: 1, name: 'Node Js', url: 'https://www.eventstore.com/hubfs/nodejs-comb.png'
+        index: 1, name: 'Node Js', url: 'https://cdn.iconscout.com/icon/free/png-256/free-node-js-3550841-2970426.png'
     },
     {
-        index: 2, name: 'Mongo DB', url: 'https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png'
+        index: 2, name: 'React Js', url: 'https://c4.wallpaperflare.com/wallpaper/294/834/442/reactjs-facebook-javascript-minimalism-wallpaper-preview.jpg'
     },
     {
-        index: 3, name: 'C++', url: 'https://media.geeksforgeeks.org/img-practice/banner/cpp-programming-basic-to-advanced-thumbnail-old.png?v=1684154013.0731087'
+        index: 3, name: 'Mongo DB', url: 'https://cdn.iconscout.com/icon/free/png-256/free-mongodb-5-1175140.png'
     },
     {
         index: 4, name: 'Python', url: 'https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png'

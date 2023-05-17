@@ -4,7 +4,7 @@
     background-position: center;
     position: relative;
     object-fit: cover;
-    background-color: #555555;
+    /* background-color: #019081; */
 
 }
 .skill-bg{
@@ -26,9 +26,9 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 7px;
+    border: 10px;
     border-style: solid;
-    border-color: #EEEE;
+    border-color: #F2EEE0;
 }
 
 .icon-name {
@@ -37,7 +37,7 @@
     padding: 40px 0;
     font-weight: 500;
     font-size: 1.2rem;
-    color: #EEEE;
+    /* color: #55555; */
 }
 
 .skills-img {

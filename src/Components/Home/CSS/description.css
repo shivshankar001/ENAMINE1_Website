@@ -1,28 +1,16 @@
 #description{
     display: block;
-    /* height:600px; */
     width:100%;
-    /* background-image: url("https://media.istockphoto.com/id/1220742546/vector/hiking-freedom-man-with-raised-hand-standing-in-a-beautiful-landscape.jpg?s=612x612&w=0&k=20&c=tGnGPwzv77jsUOoEg2ZHwc-qlhKS4eFCMJxPdYBi7sA="); */
     background-position: center;
     background-size: cover;
-    /* backface-visibility: calc();*/
     position: relative;
-    opacity: 0.65;
-    /* background-position: center; */
-    /* background-size: cover; */
-    /* bottom: 0; */
-    /* -webkit-filter: blur(5px); */
-    /* filter: blur(5px); */
-    background-color: #F1EEE9;
+    background-color:#F2EEE0;
 }
 
 .para-body{
-    /* padding: 150px; */
-    padding-bottom: 100px;
     padding-top: 0px;
     font-family: Montserrat, sans-serif;
     font-weight: lighter;
-    /* color: white; */
     font-size: 1.3rem;
     display: inline-block;
 }
@@ -31,7 +19,6 @@
     font-family: Montserrat, sans-serif;
     font-weight: bolder;
     text-align: center;
-    /* color: #EEEE; */
     font-size: 3.5rem;
     padding-top: 100px;
     padding-bottom: 40px;
@@ -45,8 +32,14 @@
 .description{
     display: flex;
     align-items: center;
-    /* margin: auto; */
-    /* object-fit: cover; */
+    padding: 0 150px ;
+    padding-bottom: 100px;
     justify-content: center;
     gap:150px;
+}
+
+.my-image{
+    height: 360px;
+    width: 360px;
+    flex-shrink: 0;
 }

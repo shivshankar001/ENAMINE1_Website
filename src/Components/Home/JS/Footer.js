@@ -35,10 +35,20 @@ const Footer = () => {
         <p className='footer-para-body'>
           Send a Message
         </p>
-        <input type="text" name="your name" className='your-name textbox' placeholder='Your Name' />
-        <input type="eamil" name="Email" id="eamil" className='textbox' placeholder='Email' />
-        <input type="text" name="Message" id="message" className='message textbox' placeholder='Message' />
-        <button>Send</button>
+        <div className="floating-label-group">
+          <input type="text" id="username" className="form-control textbox" autoComplete="off" autoFocus required />
+          <label className="floating-label para-body">Your Name</label>
+        </div>
+
+        <div className="floating-label-group">
+          <input type="email" id="email" className="form-control textbox" autoComplete="off" required />
+          <label className="floating-label para-body">Email</label>
+        </div>
+        <div className='floating-label-group'>
+          <input type="text" name="Message" id="message" className='message form-control' autoComplete="off"/>
+          <label className="floating-label para-body">Message</label>
+        </div>
+        <button className='custom-btn btn-7'>Send</button>
       </div>
       <div className="sitemap">
         <h2 className='subheading'>
@@ -62,10 +72,10 @@ const Footer = () => {
         </p>
         <div>
           {myLinks.map((item) => (
-            <a className='footer-para-body sitemap-links' href={item.url} key={item.index}><img className='usefull-links-logo' src={item.image} alt={item.name}></img>{ item.value }</a>
+            <a className='footer-para-body sitemap-links' href={item.url} key={item.index}><img className='usefull-links-logo' src={item.image} alt={item.name}></img>{item.value}</a>
           ))}
+        </div>
       </div>
-    </div>
     </section >
   )
 }
