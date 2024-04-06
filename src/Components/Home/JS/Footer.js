@@ -9,7 +9,7 @@ import logoEmail from '../Assets/Images/envelope-regular.svg'
 
 
 const Footer = () => {
-  const links = [{ name: "Home", link: "/MyOwnWebsite" }, { name: "About US", link: "/MyOwnWebsite/about" }, { name: "College", link: "/MyOwnWebsite/college" }, { name: "Skills", link: "/MyOwnWebsite/skills" }, { name: "Contact Us", link: "/MyOwnWebsite/contact-us" }]
+  const links = [{ name: "Home", link: "/MyOwnWebsite/home" }, { name: "About US", link: "/MyOwnWebsite/about" }, { name: "College", link: "/MyOwnWebsite/college" }, { name: "Skills", link: "/MyOwnWebsite/skills" }, { name: "Contact Us", link: "/MyOwnWebsite/contact-us" }]
   const myLinks = [
     {
       index: 0, name: 'Phone', image: logoPhone, value: '(+91) 8955602543', url: 'tel:+918955602543'
@@ -46,8 +46,11 @@ const Footer = () => {
           <label className="floating-label para-body">Email</label>
         </div>
         <div className='floating-label-group'>
-          <input type="text" name="Message" id="message" className='message form-control' autoComplete="off" />
-          <label className="floating-label para-body">Message</label>
+          <label style={{ color: 'white', fontWeight: '600' }}>Message</label>
+          {/* <input type="text" name="Message" id="message" className='message form-control' autoComplete="off" /> */}
+          <textarea style={{
+            height: '5rem', width: '15rem', borderRadius: '10px', padding: '10px', overflowY: 'auto'
+          }} name="Message" id="message" className='message form-control' />
         </div>
         <button className='custom-btn btn-7'>Send</button>
       </div>
@@ -77,7 +80,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-    </section >
+    </section>
   )
 }
 

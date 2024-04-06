@@ -1,46 +1,48 @@
-nav{
+nav {
     display: flex;
 }
-.menu-bar{
+
+.menu-bar {
     display: inline-block;
     padding-top: 0;
 }
-.menu{
+
+.menu {
     list-style-type: none;
     border-radius: 10px;
 
 }
 
-.menu-elements{
-    padding:10px 30px;
+.menu-elements {
+    padding: 10px 30px;
     background-color: #f2ad42;
-    font-family: Montserrat , sans-serif;
+    font-family: Montserrat, sans-serif;
     text-align: center;
     text-decoration: none;
     color: black;
 }
 
-.link-menu-elements>.menu-elements.active{
+.link-menu-elements>.menu-elements.active {
     background-color: #2fdf84;
     transition: 0.4s;
 }
 
-.menu-elements:first-child{
+.menu-elements:first-child {
     border-radius: 5px 00px 0px 5px;
     /* padding-left: 50px; */
 }
 
-.menu-elements:last-child{
+.menu-elements:last-child {
     border-radius: 0px 5px 5px 0px;
     /* padding-right: 50px; */
 }
 
-.menu-elements:hover{
+.menu-elements:hover {
     background-color: #bc3476;
     transition: 0.4s;
 }
 
-.link-menu-elements{
+.link-menu-elements {
     cursor: pointer;
     display: flex;
     text-decoration: none;
