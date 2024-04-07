@@ -9,7 +9,7 @@ import logoEmail from '../Assets/Images/envelope-regular.svg'
 
 
 const Footer = () => {
-  const links = [{ name: "Home", link: "/MyOwnWebsite/home" }, { name: "About US", link: "/MyOwnWebsite/about" }, { name: "College", link: "/MyOwnWebsite/college" }, { name: "Skills", link: "/MyOwnWebsite/skills" }, { name: "Contact Us", link: "/MyOwnWebsite/contact-us" }]
+  const links = [{ name: "Home", link: "/MyOwnWebsite/" }, { name: "About US", link: "/MyOwnWebsite/about" }, { name: "College", link: "/MyOwnWebsite/college" }, { name: "Skills", link: "/MyOwnWebsite/skills" }, { name: "Contact Us", link: "/MyOwnWebsite/contact-us" }]
   const myLinks = [
     {
       index: 0, name: 'Phone', image: logoPhone, value: '(+91) 8955602543', url: 'tel:+918955602543'
